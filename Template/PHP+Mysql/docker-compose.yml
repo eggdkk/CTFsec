@@ -1,0 +1,14 @@
+version: '3'
+services:
+    2020N1SignIn: 
+      build: .           # 构建路径, . 表示会在当前路径下找 Dockerfile 文件
+      image: 2020n1signin   # 镜像名称, 如果没有上面的 build, docker-compose 将会尝试从官方仓库 pull 该镜像
+      ports: 
+        - 7030:80     # 映射端口 虚拟机端口:容器内端口
+      links:
+        - mysql:mysql
+    mysql: 
+      build: ./mysql
+      image: 2020n1signinmysql
+      environment:
+        MYSQL_ROOT_PASSWORD: "XHiOgHDHGl59u2uY"
