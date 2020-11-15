@@ -1,0 +1,15 @@
+version: '3'
+services:
+  2020dhbhello:
+    build:
+      context: .
+    working_dir: /home/web
+    container_name: 2020dhbhello
+    ulimits:
+      nproc: 65535
+      core: 0
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "8888:8888"
+    entrypoint: /etc/init.sh

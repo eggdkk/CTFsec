@@ -3,7 +3,7 @@
 
 class Pan
 {
-    public $hostname = 'dhb1mysql';
+    public $hostname = 'mysql';
     public $username = 'root';
     public $password = 'root';
     public $database = 'ctf';
