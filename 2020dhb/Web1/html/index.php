@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-4 column">
             <br>
-            <form role="form" action='/2020dhb/Web1/index.php' method="POST">
+            <form role="form" action='./index.php' method="POST">
                 <div class="form-group">
                     <h3>提取码</h3><br><input class="form-control" name="code" />
                 </div>

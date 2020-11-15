@@ -8,7 +8,7 @@ services:
       links:
         - mysql:mysql
     mysql : 
-      build: ./mysql1/.
+      build: ./mysql
       image: 2020dhbwebsql
       environment:
         MYSQL_ROOT_PASSWORD: "root"
